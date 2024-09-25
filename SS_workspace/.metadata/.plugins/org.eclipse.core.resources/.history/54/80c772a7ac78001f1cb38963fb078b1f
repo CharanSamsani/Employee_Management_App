@@ -1,0 +1,5 @@
+package com.charan.www.repo;
+
+public interface EmployeeRepository {
+
+}

@@ -1,0 +1,5 @@
+package com.charan.www.model;
+
+public class Employee {
+
+}
