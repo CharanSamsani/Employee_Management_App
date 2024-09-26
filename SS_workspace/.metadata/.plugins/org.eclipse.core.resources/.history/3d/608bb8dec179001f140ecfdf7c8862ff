@@ -1,5 +1,0 @@
-package com.charan.www.exception;
-
-public class ResourceNotFoundException {
-
-}
