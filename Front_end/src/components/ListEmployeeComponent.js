@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react'
 import EmployeeService from '../services/EmployeeService';
 import {Link } from 'react-router-dom';
@@ -59,6 +58,21 @@ export default class ListEmployeeComponent extends Component {
                         </tr>
                     </thead>
                     <tbody>
+                        {
+                            this.state.employees.map(
+                                employee=>
+                                <tr key={employee.id}>
+                                      <td>{employee.firstName}</td>
+                                      <td>{employee.lastName}</td>
+                                      <td>{employee.email}</td> 
+                                      <td>
+                                         
+                                          <Link to="/update-employee/1" className="btn btn-info" >update</Link>  
+                                          <button className='btn btn-danger' style={{marginLeft:"15px"}} onClick={()=> this.deleteEmployee(employee.id)}>Delete</button>
+                                      </td> 
+                                </tr>
+                            )
+                        }
                     </tbody>
                 </table>
             </div>        
