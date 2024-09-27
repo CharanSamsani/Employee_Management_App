@@ -6,7 +6,7 @@ export default class ListEmployeeComponent extends Component {
      
 
     constructor(props)
-    {
+    { 
         super(props);
 
         this.state={
