@@ -9,7 +9,7 @@ export default class ListEmployeeComponent extends Component {
 
         this.state={
             employees:[]
-        }
+        } 
      
     }
 
