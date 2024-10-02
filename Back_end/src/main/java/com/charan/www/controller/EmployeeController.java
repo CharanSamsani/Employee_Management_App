@@ -1,6 +1,6 @@
 package com.charan.www.controller;
 
-package com.charan.www.controller;
+package com.charan.www.controller; 
 
 import java.util.List;
 
