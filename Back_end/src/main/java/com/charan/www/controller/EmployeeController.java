@@ -1,7 +1,5 @@
 package com.charan.www.controller;
 
-package com.charan.www.controller; 
-
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -56,6 +54,6 @@ public class EmployeeController
 	public ResponseEntity<HttpStatus> deleteEmployee(@PathVariable long id)
 	{
 		return employeeService.deleteEmployee(id);
-		
 	}
+	
 }
