@@ -3,20 +3,14 @@ import { useState} from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import EmployeeService from '../services/EmployeeService';
 
-
-
 export default function UpdateEmployeeComponent(props)
-{
-  
+{  
     let navigate = useNavigate();
    
-
     const [firstName,setFirstName]=useState("");
     const [lastName,setLastName]=useState("");
     const [email,setEmail]=useState("");
     const {id}= useParams();
-
-
 
   useEffect(()=>
   {
@@ -32,7 +26,6 @@ export default function UpdateEmployeeComponent(props)
         })
 
   },[])
-
  
  const updateHandler=(e)=>
  {
@@ -49,7 +42,6 @@ export default function UpdateEmployeeComponent(props)
             {
             console.log(res.data);
             navigate('/employees');
-
         })
     }
  }
@@ -59,7 +51,6 @@ export default function UpdateEmployeeComponent(props)
     navigate('/employees');
   }
  
-  
     return (
       <div className="container mt-3">
           <div className="row">
@@ -77,7 +68,6 @@ export default function UpdateEmployeeComponent(props)
                     <input placeholder="Last Name" name="lastName" className="form-control"
                            value={lastName} onChange={(e)=> setLastName(e.target.value)}/>
                   </div>
-
                   <div className="form-group my-2">
                     <label>Email:</label>
                     <input placeholder="Email" name="email" className="form-control"
@@ -90,6 +80,5 @@ export default function UpdateEmployeeComponent(props)
             </div>
           </div>  
       </div>
-
     )
   }
